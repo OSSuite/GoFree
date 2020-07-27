@@ -10,3 +10,18 @@ postgres and password postgres, with the database `gofree`.
 ```
 sudo docker run -p 80:8080 -e GOFREE_PG_DNS=postgres://postgres:violetlocaldev@172.17.0.1:5432 gofree
 ```
+
+## How to use
+Edit your DNS hosts to point `go` to the server GoFree is running on. Then use
+it like this:
+
+### Adding links
+Visit this URL in your browser:
+```
+go/add link-name https://google.com
+```
+
+### Visiting links
+```
+go/link-name
+```
