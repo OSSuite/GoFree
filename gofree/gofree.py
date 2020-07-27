@@ -12,6 +12,7 @@ cors(app)
 pool: Pool
 
 SCHEMA_VERSION = 1
+VERSION = '0.1.1'
 
 
 # For some reason, asyncpg doesn't type this. This is here for autocomplete
@@ -41,6 +42,11 @@ async def prepare():
         )
     finally:
         await pool.release(con)
+
+
+@app.route('/')
+async def index():
+    return f'<h1>GoFree v{VERSION}</h1><p>schema version: {SCHEMA_VERSION}</p>'
 
 
 @app.route('/add <path:parts>')
