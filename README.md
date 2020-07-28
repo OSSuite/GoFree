@@ -1,7 +1,7 @@
 # GoFree: Insanely simple golinks
 
 ## Install it in 1 minute and 13 seconds
-[![Speedrunning installing GoFree](https://img.youtube.com/vi/u19ETNmI5BA/0.jpg)](https://www.youtube.com/watch?v=u19ETNmI5BA)
+It installs in [1m13s](https://www.youtube.com/watch?v=u19ETNmI5BA).
 
 ## Prerequisites
 * PostgreSQL (hey -- there's a Docker container for that!)
